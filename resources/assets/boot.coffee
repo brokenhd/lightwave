@@ -7,5 +7,11 @@ directories to work around this.
 # Load styles that aren't referenced within JS
 require './start/app.styl'
 
+# Global styles
+require './global/header.styl'
+
+# Home
+require './home/marquee.styl'
+
 # Async request app.js so that it doesn't block the DOM
 require ['./start/app']

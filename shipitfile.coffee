@@ -5,7 +5,6 @@ Settings
 # App level config
 config =
 	appName:      'lightwave'
-	slackChannel: '#xxxxxxx'
 
 # Staging config
 config.staging =
