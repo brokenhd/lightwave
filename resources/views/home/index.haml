@@ -1,0 +1,8 @@
+- Layout::title('Welcome')
+- Layout::meta(['description' => 'Lightwave Construction'])
+
+.marquee
+	-if ($bkgd = Decoy::el('home.marquee.image')->value)
+		.bkgd(style="background-image:url('#{$bkgd}')")
+	%h1!= Decoy::el('home.marquee.title')
+	.subtitle!= Decoy::el('home.marquee.subtitle')

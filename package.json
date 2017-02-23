@@ -1,0 +1,21 @@
+{
+	"name": "app",
+	"version": "0.0.1",
+	"dependencies": {
+		"camo" : "git+ssh://git@github.com/bkwld/camo.git"
+	},
+	"scripts": {
+		"init": "node_modules/.bin/coffee node_modules/camo/tools/init.coffee",
+		"webpack": "node_modules/.bin/webpack",
+		"dev": "printf \"\\e]2;$(cd ../ && basename $(pwd))\\a\" && printf \"\\e]1;Webpack - Dev\\a\" && webpack-dashboard -- node_modules/.bin/webpack-dev-server --hot --inline --host 0.0.0.0 --quiet",
+		"watch": "printf \"\\e]2;$(cd ../ && basename $(pwd))\\a\" && printf \"\\e]1;Webpack - Watch\\a\" && node_modules/.bin/webpack --watch",
+		"minify": "node_modules/.bin/webpack -p --progress --hide-modules",
+		"shipit": "node_modules/.bin/shipit",
+		"deploy:staging": "node_modules/.bin/shipit staging deploy",
+		"deploy:production": "node_modules/.bin/shipit production deploy",
+		"rollback:staging": "node_modules/.bin/shipit staging rollback",
+		"rollback:production": "node_modules/.bin/shipit production rollback"
+	},
+	"private": true,
+	"license": "UNLICENSED"
+}

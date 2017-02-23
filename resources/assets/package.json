@@ -1,0 +1,14 @@
+{
+	"private": true,
+	"dependencies": {
+		"bukwild-stylus-library": "^0",
+		"fastclick": "^1.0.6",
+		"jquery": "^1.11.3",
+		"lodash": "^4",
+		"normalize.css": "^3.0.3",
+		"stylus": "^0",
+		"stylus-library": "bkwld/stylus-library",
+		"velocity-animate": "^1.2.3",
+		"vue": "^1.0.7"
+	}
+}

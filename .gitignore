@@ -1,0 +1,25 @@
+# Passwords
+.env
+
+# PHP dependencies
+/vendor
+
+# Node dependencies
+node_modules
+npm-debug.log
+
+# Workbenching for PHP and JS
+studio.json
+/workbench
+/workbench-bak
+/resources/assets/workbench
+/resources/assets/admin/workbench
+
+# Mac
+.DS_Store
+/_docs
+
+# Laravel
+/public/storage
+Homestead.yaml
+Homestead.json
