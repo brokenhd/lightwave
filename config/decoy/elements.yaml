@@ -7,3 +7,11 @@ home:
     title: Lightwave Construction
     subtitle: A subtitle can go here
     image,image:
+
+  about_us:
+    copy,wysiwyg: <p>Lightwave Construction operates in the construction and engineering industry, and is regulated by the California Environmental Quality Act (CEQA), Occupational Safety and Health Administration (OSHA,) and California State Licensing Board (CSLB). We must also adhere to and obtain governmental permits on some projects.</p><p>Lightwave Construction has a California State General Engineering (A) License. We are currently in the process of obtaining our Arizona state contractors license.  Lightwave Construction has a safety first policy and adheres to all OSHA rules and regulations. When applicable, Lightwave Construction performs extensive environmental, cultural, and archaeological studies in accordance to CEQA regulations.</p><p>The management team at Lightwave Construction has performed design builds for Google,Apple, Verizon, Integra, Juniper Networks, The State of California, and Zayo.</p>
+
+  contact:
+    copy,wysiwyg:
+    address,wysiwyg:
+    phone,text:

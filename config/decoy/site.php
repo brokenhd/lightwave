@@ -23,6 +23,7 @@
 		// 'Content,book' => [
 		// 	'Articles' => '/admin/articles'
 		// ]
+		'Services,book' => '/admin/services',
 		'Elements,leaf' => '/admin/elements',
 		'Redirects,new-window' => '/admin/redirect-rules',
 	],

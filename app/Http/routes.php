@@ -5,7 +5,11 @@ Route::group(['middleware' => 'camo.web'], function () {
 
 	// Default homepage
 	Route::get('/', function () {
-    return Layout::nest('home.index');
+		$services = App\Service::listing()->get();
+
+    return Layout::nest('home.index', [
+			'services' => $services,
+		]);
 	});
 
 });

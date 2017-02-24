@@ -10,3 +10,24 @@
 	.content
 		%h1!= Decoy::el('home.marquee.title')
 		.subtitle!= Decoy::el('home.marquee.subtitle')
+
+.what-we-do
+	%h2.load-in What We Do
+
+	- foreach($services as $service)
+		.service.load-in
+			.left
+				%h3!= $service->title
+				.copy!= $service->copy
+			.right
+				%img(src=$service->img()->crop(400,400)->url)
+
+.about-us
+	%h2.load-in About Us
+	.copy!= Decoy::el('home.about_us.copy')
+
+.contact
+	%h2.load-in Contact
+	.copy!= Decoy::el('home.contact.copy')
+	.address!= Decoy::el('home.contact.address')
+	.phone!= Decoy::el('home.contact.phone')
