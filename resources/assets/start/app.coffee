@@ -11,3 +11,4 @@ require('fastclick').attach(document.body);
 # $('.icon-search').views(require('global/search-toggle'))
 
 $('.load-in').views(require('utils/in-viewport'))
+$('#header').views(require('home/header'))

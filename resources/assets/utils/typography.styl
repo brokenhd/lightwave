@@ -1,6 +1,7 @@
 /**
  * Mixins and fucntions related to typography
  */
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Playfair+Display:400,400i');
 
 /**
  * Use rems for font-size unless the font is less than 14px
@@ -23,24 +24,31 @@ font-size(size, literal = false)
  */
 font(style, size = null, color = null)
 
-	// Examples
-	// if style == 'display'
-	// 	font-family freight-display-pro
-	// 	font-weight 400
-	// else if style == 'display italic'
-	// 	font-family freight-display-pro
-	// 	font-weight 400
-	// 	font-style italic
+	if style == 'sans'
+		font-family 'Oswald', sans-serif;
+		font-weight 400
+	else if style == 'sans bold'
+		font-family 'Oswald', sans-serif;
+		font-weight 700
+	else if style == 'sans light'
+		font-family 'Oswald', sans-serif;
+		font-weight 300
+	else if style == 'serif'
+		font-family 'Playfair Display', serif;
+		font-weight 400
+	else if style == 'serif italic'
+		font-family 'Playfair Display', serif;
+		font-weight 400
+		font-style italic
 
-	// Icomoon
-	// else if style == 'icon'
-	// 	font-family 'icomoon' !important;
-	// 	speak none
-	// 	font-style normal
-	// 	font-weight normal
-	// 	font-variant normal
-	// 	text-transform none
-	// 	line-height 1
+	else if style == 'icon'
+		font-family 'icomoon' !important;
+		speak none
+		font-style normal
+		font-weight normal
+		font-variant normal
+		text-transform none
+		line-height 1
 
 	// Add font size using the rem value of what was passed in
 	font-size size if size

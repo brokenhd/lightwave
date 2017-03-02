@@ -11,7 +11,7 @@
 		%h1!= Decoy::el('home.marquee.title')
 		.subtitle!= Decoy::el('home.marquee.subtitle')
 
-.what-we-do
+.what-we-do.load-in
 	%h2.load-in What We Do
 
 	- foreach($services as $service)
@@ -19,14 +19,13 @@
 			.left
 				%h3!= $service->title
 				.copy!= $service->copy
-			.right
-				%img(src=$service->img()->crop(400,400)->url)
+			.right(style=$service->img()->crop(800,800)->bkgd)
 
-.about-us
+.about-us.block-padding.load-in
 	%h2.load-in About Us
 	.copy!= Decoy::el('home.about_us.copy')
 
-.contact
+.contact.block-padding.load-in
 	%h2.load-in Contact
 	.copy!= Decoy::el('home.contact.copy')
 	.address!= Decoy::el('home.contact.address')

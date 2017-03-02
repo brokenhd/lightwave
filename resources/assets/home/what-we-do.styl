@@ -1,0 +1,55 @@
+.what-we-do
+
+	h2
+		font 'serif', 30px, black
+		text-align center
+		display block
+		letter-spacing 1px
+		margin 70px auto
+
+	.service
+		display inline-block
+		width 100%
+		padding 5rem 11rem
+		position relative
+		font 'serif', 20px, white
+		line-height 35px
+		background blue
+
+		h3
+			font 'sans', 30px, white
+			margin-bottom 30px
+
+		.left
+			float left
+			width 50%
+			padding-right 4rem
+
+		.right
+			position absolute
+			background-size cover
+			top 0
+			bottom 0
+			width 50%
+			right 0
+
+		// transitions
+		&.load-in
+			.left
+				opacity 0
+				transform translateX(-100px)
+				transition opacity 500ms 500ms ease-in-out, transform 500ms 500ms ease-in-out
+
+			.right
+				opacity 0
+				transform translateX(100px)
+				transition transform 500ms 500ms ease-in-out, opacity 500ms 500ms ease-in-out
+
+		&.in-viewport
+			.left
+				opacity 1
+				transform translateX(0)
+
+			.right
+				opacity 1
+				transform translateX(0)

@@ -29,5 +29,7 @@
 		-# Markup
 		#main!= $content
 
+		!= View::make('layouts.footer')
+
 		-# JS
 		!= Layout::webpackAssetTag('app.js')
